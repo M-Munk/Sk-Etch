@@ -1,0 +1,60 @@
+:root {
+    --grid-rows: 16;
+    --grid-cols: 16;
+    --pen-color: #393e46;
+    --pixel-number: 1;
+}
+body {
+  font-family: "Karla", sans-serif;
+  color: #222831;
+  background: url(img/pexels-jess-bailey-designs-743986.jpg) no-repeat center
+    fixed;
+  background-size: cover;
+}
+h1 {
+  margin: 1rem 0rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.header {
+  text-align: center;
+}
+button {
+  padding: 15px 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #393e49;
+  background-color: transparent;
+  border: 3px solid #32e0c4;
+  cursor: pointer;
+  width: max-content;
+  transition: 0.25s ease;
+}
+button:hover {
+  border-style: dashed;
+}
+.buttons {
+  margin-bottom: 1rem;
+}
+.container {
+  display: grid;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  gap: 0;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.pixel {
+    transition: all .07s ease;
+    background-color: #eeeeee;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.draw {
+    /* background-color: #393e46; */
+    background-color: var(--pen-color);
+}
