@@ -31,7 +31,6 @@ pixels.forEach((pixel) => {
 });
 }
 
-
 function erase() {
     const pixels = document.querySelectorAll(".pixel");
     pixels.forEach((pixel) => {
@@ -39,8 +38,6 @@ function erase() {
     });
     draw();
 }
-
-
 
 reset.addEventListener("mouseup", erase);
 size.addEventListener("mouseup", sizeCanvas);

@@ -2,7 +2,6 @@
     --grid-rows: 16;
     --grid-cols: 16;
     --pen-color: #393e46;
-    --pixel-number: 1;
 }
 body {
   font-family: "Karla", sans-serif;
@@ -55,6 +54,5 @@ button:hover {
     padding: 0px;
 }
 .draw {
-    /* background-color: #393e46; */
     background-color: var(--pen-color);
 }
