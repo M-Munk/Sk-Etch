@@ -6,10 +6,13 @@ makeCanvas(16, 16);
 draw();
 
 function sizeCanvas() {
-    let size = prompt("Please enter pixel number per side of square canvas: ", "#");
-    erase();
-    makeCanvas(size, size);
-    draw();
+  let size = prompt(
+    "Please enter pixel number per side of square canvas: ",
+    "#"
+  );
+  erase();
+  makeCanvas(size, size);
+  draw();
 }
 
 function makeCanvas(rows, cols) {
@@ -23,20 +26,20 @@ function makeCanvas(rows, cols) {
 }
 
 function draw() {
-const pixels = document.querySelectorAll(".pixel");
-pixels.forEach((pixel) => {
+  const pixels = document.querySelectorAll(".pixel");
+  pixels.forEach((pixel) => {
     pixel.addEventListener("mouseover", function () {
-        pixel.classList.add("draw");
+      pixel.classList.add("draw");
     });
-});
+  });
 }
 
 function erase() {
-    const pixels = document.querySelectorAll(".pixel");
-    pixels.forEach((pixel) => {
-            pixel.classList.remove("draw");
-    });
-    draw();
+  const pixels = document.querySelectorAll(".pixel");
+  pixels.forEach((pixel) => {
+    pixel.classList.remove("draw");
+  });
+  draw();
 }
 
 reset.addEventListener("mouseup", erase);

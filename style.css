@@ -1,7 +1,7 @@
 :root {
-    --grid-rows: 16;
-    --grid-cols: 16;
-    --pen-color: #393e46;
+  --grid-rows: 16;
+  --grid-cols: 16;
+  --pen-color: #393e46;
 }
 body {
   font-family: "Karla", sans-serif;
@@ -47,12 +47,12 @@ button:hover {
   grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 .pixel {
-    transition: all .07s ease;
-    background-color: #eeeeee;
-    border: none;
-    margin: 0px;
-    padding: 0px;
+  transition: all 0.07s ease;
+  background-color: #eeeeee;
+  border: none;
+  margin: 0px;
+  padding: 0px;
 }
 .draw {
-    background-color: var(--pen-color);
+  background-color: var(--pen-color);
 }
